@@ -605,7 +605,7 @@ ul{
 .social-title::before{
   content: "";
   position: absolute;
-  width:110px;
+  width:90px;
   height: 2px;
   background: silver;
   top: 50%;
@@ -614,7 +614,7 @@ ul{
 .social-title::after{
   content: "";
   position: absolute;
-  width:110px;
+  width:90px;
   height: 2px;
   background: silver;
   top: 50%;
@@ -625,14 +625,16 @@ ul{
 }
 
 .fb-like{
-  margin-top: 0.5em;
+  margin-top:1em;
 }
-.twitter-mention-button{
-  /* margin: 1em 0;  */
+.twitter-buttons{
+  margin: 1em 0; 
 }
 .social-container{
-  width: 90%;
+  width:90%;
+  margin: 0 auto;
   background: url(/Asset/Social/Social-bg.jpg) center/cover no-repeat;
+  overflow: hidden;
 }
 
 
@@ -667,7 +669,7 @@ ul{
   .social-title::before{
     content: "";
     position: absolute;
-    width:80px;
+    width:75px;
     height: 2px;
     background: silver;
     top: 50%;
@@ -676,7 +678,7 @@ ul{
 .social-title::after{
   content: "";
   position: absolute;
-  width:80px;
+  width:75px;
   height: 2px;
   background: silver;
   top: 50%;
