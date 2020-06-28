@@ -1,0 +1,94 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+:root{
+    --darkBlue:#11263F;
+    --navyBlue:#234262;
+    --secondaryBlue:#391DA1;
+    --Blue:#2351A6;
+    --staticsBlue:#0041E8;
+    --staticsOrange:#F39B43;
+    --staticsRedish:#CE5958;
+    --Greyish:#f5f5f5;
+    --linearBg :rgba(31, 44, 115, 0.57);
+}
+
+.about-navigations li{
+    margin:0 15px;
+}
+@media (min-width:991px){
+    #AboutnavbarNavDropdown{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.uniform{
+    padding: 80px 0;
+    margin-top: 2.5em;
+}
+.uniform-title{
+    margin-bottom: 1em;
+    position: relative;
+    color: #444;
+}
+.uniform-title::before, .uniform-title::after{
+    content: "";
+    position: absolute;
+    width:40px;
+    height:2px;
+    background: silver;
+    top:50%;
+}
+.uniform-title::before{
+    left:-5%;
+}
+.uniform-title::after{
+    right:74%;
+}
+
+@media(max-width:576px){
+    .uniform-title{
+        text-align: center;
+    }
+    .uniform-title::before{
+        left:18%;
+    }
+    .uniform-title::after{
+        right:18%;
+    }
+}
+
+@media (max-width:400px){
+    .uniform-title{
+        text-align: center;
+    }
+    .uniform-title::before{
+        left:4%;
+    }
+    .uniform-title::after{
+        right:4%;
+    }
+}
+

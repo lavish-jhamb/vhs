@@ -1,0 +1,150 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+:root{
+    --darkBlue:#11263F;
+    --navyBlue:#234262;
+    --secondaryBlue:#391DA1;
+    --Blue:#2351A6;
+    --staticsBlue:#0041E8;
+    --staticsOrange:#F39B43;
+    --staticsRedish:#CE5958;
+    --Greyish:#f5f5f5;
+    --linearBg :rgba(31, 44, 115, 0.57);
+}
+.about-navigations li{
+    margin:0 15px;
+}
+@media (min-width:991px){
+    #AboutnavbarNavDropdown{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* REGISTRATION _BG */
+.registration-bg{
+    height:50vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Asset/Homepage/main\ school\ bg.jpg) center/cover no-repeat;
+    position: relative;
+}
+.registration-bg-content{
+    color: white;
+    position: absolute;
+    bottom:9%;
+    left:10%;
+}
+.registration-bg-content h2{
+    font-weight: 600;
+}
+.registration-bg-content a {
+    color: white;
+}
+.registration-bg-content a:hover{
+    color: lightblue;
+}
+.criteria h6{
+    font-weight:600;
+    text-align: center;
+    border-bottom: solid 1px silver;
+    padding-bottom:0.5em;
+}
+.documents h6{
+    font-weight:600;
+    text-align: center;
+    border-bottom: solid 1px silver;
+    padding-bottom:0.5em;
+}
+
+
+.registration-form{
+    padding: 80px 0;
+    /* margin-top:5em; */
+    background: var(--Greyish);
+}
+
+.registration-form-title{
+    margin-bottom:2em;
+}
+.asterisk{
+    color: red;
+    margin-right:5px;
+}
+.student-registration-form{
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.form-section{
+    margin-top:7em;
+}
+#registration-center{
+    /* border: solid 3px red; */
+    width: 90%;
+    margin: 0 auto;
+}
+.registration-btn{
+    background: var(--secondaryBlue);
+    color: white;
+    outline: none;
+    border: none;
+    margin-top:1.2em;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.registration-btn:hover{
+    background: #30178a;
+}
+.previous-center .form-group{
+    margin-top:0.6em;
+    margin-bottom:0;
+}
+
+
+@media (min-width:991px){
+    .criteria h6, .documents h6{
+        text-align: left;
+    }
+    .registration-btn{
+        text-align: center;
+        width:20%;
+    }
+
+    .previous-center{
+        margin-top: 1em;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+    }
+}
+
+@media (max-width:398px){
+    .registration-bg-content{
+        color: white;
+        position: absolute;
+        bottom:9%;
+        left:3%;
+    }
+}
